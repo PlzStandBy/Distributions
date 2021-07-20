@@ -1,0 +1,35 @@
+﻿<Window
+        x:Class="GenFunc.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GenFunc"
+        mc:Ignorable="d"
+        Title="Zalatov's Allocations" Height="450" Width="800">
+    <!--ОСНОВНАЯ РАЗМЕТКА-->
+    <Grid Background="#FF252525">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="170"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        
+        <!--РАЗМЕТКА ПАНЕЛИ С КНОПКАМИ-->
+        <Grid Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"></RowDefinition>
+                <RowDefinition Height="40"></RowDefinition>
+                <RowDefinition Height="40"></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            
+            <Button Grid.Row="0" Margin="3" Content="Нормальное" BorderThickness="2" BorderBrush="#FF444444" Background="#FF252525" FontFamily="Trebuchet" FontWeight="DemiBold" Foreground="AliceBlue" FontSize="17" Click="NormalAllocButtonClick" ></Button>
+            <Button Grid.Row="1" Margin="3" Content="Экспоненциальное" BorderThickness="2" BorderBrush="#FF444444" Background="#FF252525" FontFamily="Trebuchet" FontWeight="DemiBold" Foreground="AliceBlue" FontSize="17" Click="ExponentialAllocButtonClick"></Button>
+            <Button Grid.Row="2" Margin="3" Content="Выход" BorderThickness="2" BorderBrush="#FF444444" Background="#FF252525" FontFamily="Trebuchet" FontWeight="DemiBold" Foreground="AliceBlue" FontSize="17" Click="ExitClick"></Button>
+            <TextBlock Grid.Row="3" Margin="3" Background="#FF1F1F1F" TextAlignment="Justify" VerticalAlignment="Bottom" HorizontalAlignment="Stretch" TextWrapping="Wrap" FontFamily="Trebuchet" Foreground="AliceBlue" FontSize="10"></TextBlock>
+        </Grid>
+                      
+        
+        <Frame Grid.Column="1" x:Name="Main" NavigationUIVisibility="Hidden" ></Frame>
+    </Grid>
+</Window>

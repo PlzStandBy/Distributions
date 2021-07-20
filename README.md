@@ -1,2 +1,4 @@
 # Distributions
-С# modeling of normal and exponential distribution
+?# modeling of normal and exponential distribution.
+## Screenshot
+![programm_screenshot](https://github.com/PlzStandBy/ReactionGame/blob/main/welcomescreenshot.PNG)
